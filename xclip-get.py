@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 import sys
-from Xlib import X, display as Xdisplay
+from Xlib import X, display as display
 
-display = Xdisplay.Display()
+display = display.Display()
 window = display.screen().root.create_window(0,0, 1,1, 0, X.CopyFromParent)
 
 window.change_attributes(event_mask = X.PropertyChangeMask)
