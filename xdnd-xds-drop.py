@@ -173,7 +173,7 @@ class Window:
                     print("DATA GOT:", data)
                 # xds
                 elif prop.property_type == self.xds:
-                    print("XSD data:", prop.value)
+                    print("XDS data:", prop.value)
                 #
                 # step 8 -> send XdndFinished
                 ewindow = self.display.create_resource_object('window', self.win_source)
